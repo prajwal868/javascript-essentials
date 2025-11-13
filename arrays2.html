@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      let x=[100,201,300,401,500]
+      console.log(x)
+
+      function square(s){
+        return s*s
+      }
+      let s=x.map(square)
+      console.log(s)
+
+      function even(element){
+        return element % 2==0;
+      }
+      let f=x.filter(even);
+      console.log('filtered')
+      console.log(f)
+
+
+       function sum_natural(n){
+        var sum=0; 
+        for(i=1;i<=10;i++){
+        sum+=i; 
+        }
+        return sum;
+        //console.log(sum_natural(10))
+    }
+    //sum_natural(10);
+    console.log(sum_natural(10))
+    let v =x.map(sum_natural);
+    console.log(v)
+    let k =x.filter(sum_natural)
+    console.log(k)
+    console.log('fact')
+    function fact(){
+       x=5;
+       fact=1;
+       for(i=2;i<=x;i++){
+
+           fact*=i;
+        }
+        return fact;  
+    }
+    let  b =x.map(fact)
+    console.log('map for b')
+    console.log(b)
+    let g =x.filter(fact)
+    console.log('filter for c')
+    console.log(g)
+      
+
+    </script>
+</body>
+</html>

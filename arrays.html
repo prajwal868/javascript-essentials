@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    console.log("=====push=====")
+    let fruits =['apple', 'banana'];
+    fruits.push('orange','grape');
+    console.log(fruits)
+
+    console.log("====pop====")
+    let fruit=['apple','orange','banana']
+    console.log(fruit)
+    let lastfruit = fruit.pop();
+    console.log(fruit)
+
+    console.log("===unshift===")
+    let fruit_unshift = ['banana','orange'];
+    fruit_unshift.unshift('apple',"grape");
+    console.log(fruit_unshift)
+
+    console.log("===shift===")
+    let fruit_shift=['apple','banana','orange']
+    fruit_shift.shift('orange')
+    console.log(fruit_shift)
+
+    console.log("===length property===")
+    let fruit_length=['apple', 'banana','orange','mango']
+    console.log(fruit_length.length)
+
+    console.log('===indexOf()===')
+    let fruit_index =['apple', 'banana','orange','mango','strawberry','banana',9]
+    console.log(fruit_index.indexOf('banana'))
+    console.log(fruit_index.indexOf("banana",2))
+    console.log(fruit_index.indexOf(9))
+
+    console.log("====concat====")
+    let fruit1 =['apple','banana']
+    let fruit2 = ['orange','grape']
+    let allfruits = fruit1.concat(fruit2)
+    console.log(allfruits)
+
+    console.log("====slice===")
+    let fruit_slice = ['apple', 'banana','orange','mango','kiwi']
+    let sliced = fruit_slice.slice(1,4);
+    let sliced2 = fruit_slice.slice(2);
+    console.log(sliced)
+    console.log(sliced2)
+
+    console.log('===splice===')
+    let fruit_splice = ['apple', 'banana','orange','grape','kiwi'];
+    fruit_splice.splice(2,1, 'mango','peach')
+    console.log(fruit_slice)
+    
+  </script>
+
+</body>
+</html>
