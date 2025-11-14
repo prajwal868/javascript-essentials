@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let avenger ={
+            f_name:'sterve',                  
+            l_name:'roger',                 
+        'heroic_name':'captain' 
+        }
+        console.log(avenger)                      //method
+        function power(){
+            return 'shied is my superpower'
+        }
+        console.log(avenger.f_name)
+        console.log(avenger.l_name)
+        console.log(avenger.heroic_name)
+        console.log(power())
+         
+        avenger.f_name='tony'
+        delete avenger.l_name
+        console.log(avenger.f_name)
+        console.log(avenger)
+
+        //let dc={}
+        let dc = new Object()
+        dc.f_name='bruce'
+        dc.l_name='wayne'
+        dc.heroic_name='batman'
+        console.log(dc) 
+        
+    </script>
+</body>
+</html>
